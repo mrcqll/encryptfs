@@ -1,0 +1,29 @@
+
+{% extends "files/base.html" %}
+
+{% block content %}
+<div class="card" style="max-width:650px;margin:auto">
+    <h1>Upload File</h1>
+    <p>Choose a document to upload to your account.</p>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <p style="color:#94a3b8">
+            Maximum file size: 10 MB
+        </p>
+
+        <button type="submit">Upload File</button>
+        <a href="{% url 'dashboard' %}"
+           style="margin-left:15px">
+            Cancel
+        </a>
+    </form>
+
+    <p style="color:#fbbf24;margin-top:25px">
+        Prototype notice: Encryption will be added
+        in a future development milestone.
+    </p>
+</div>
+{% endblock %}

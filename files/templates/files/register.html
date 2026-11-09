@@ -1,0 +1,20 @@
+
+{% extends "files/base.html" %}
+
+{% block content %}
+<div class="card" style="max-width:450px;margin:auto">
+    <h1>Create Account</h1>
+    <p>Start managing your files with encryptfs.</p>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Register</button>
+    </form>
+
+    <p>
+        Already registered?
+        <a href="{% url 'login' %}">Sign In</a>
+    </p>
+</div>
+{% endblock %}
