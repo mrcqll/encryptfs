@@ -1,3 +1,14 @@
+## Executive Summary
+
+encryptfs is a secure, web-based file storage and sharing application designed to provide users with a convenient way to manage and exchange sensitive information. The application focuses on protecting file confidentiality through encryption, user authentication, and controlled access mechanisms while maintaining a straightforward and accessible user experience.
+
+The platform will allow users to upload, store, download, and securely share files through an intuitive web interface. Planned security features include AES-256-GCM encryption, time-limited sharing links, access revocation, and file activity monitoring. These capabilities are intended to reduce the risks associated with unauthorized file access, data exposure, and insecure file distribution.
+
+What makes encryptfs interesting is its security-first approach to a common challenge: securely sharing files without sacrificing usability. Rather than treating security as an additional feature, encryptfs incorporates confidentiality, access control, and accountability into its core application design.
+
+The application is being developed using Python and the Django web framework, with a dark-mode interface designed for simplicity and ease of use. The initial prototype demonstrates user authentication, file uploads, downloads, and basic file management. Additional encryption and secure sharing functionality will be implemented in subsequent development milestones.
+
+Ultimately, encryptfs aims to demonstrate how modern web application development practices and cybersecurity principles can be combined to create a practical, secure, and user-friendly file-sharing solution.
 
 ## Installation
 
